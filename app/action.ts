@@ -42,7 +42,7 @@ export async function saveUserProfile(formData: FormData) {
         name,
         email,
         preferences,
-      })
+      } as any)
     }
 
     return { success: true, message: 'Profile saved successfully' }
